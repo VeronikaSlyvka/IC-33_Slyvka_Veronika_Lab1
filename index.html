@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+       
+        h1 {
+            position: fixed;
+            top: 0; 
+            width: 100%;
+            text-align: center;
+            color: #1a6060;
+            background-color: #ffffff; 
+            z-index: 999;
+            padding: 10px 0;
+            margin: 0;
+        }
+    
+        .menu-container ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #216767;
+            position: fixed;
+            top: 50px; 
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .menu-container li {
+            float: left;
+        }
+
+        .menu-container li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 16px;
+            padding-left: 45px;
+            padding-right: 45px;
+            text-decoration: none;
+        }
+
+        .menu-container li a:hover {
+            background-color: #0a3737;
+        }
+
+        
+        .content {
+            margin-top: 80px; 
+        }
+
+      
+        h3 {
+            margin-top: 30px;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        ol {
+            margin-top: 10px;
+            margin-bottom: 20px;
+            padding-left: 40px;
+        }
+
+        ol li {
+            margin-bottom: 10px;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+            padding: 15px;
+            text-align: center;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #D6EEEE;
+        }
+    </style>
+</head>
+
+<body>
+    <header> <h1>Книгарня місіс Пінс</h1></header>
+    <div class="menu-container">
+        <ul >
+            <li><a href="#main">Головна</a></li>
+            <li><a href="#book">Каталог книг</a></li>
+            <li><a href="#adress">Адреса магазинів</a></li>
+            <li><a href="#contacts">Контакти</a></li>
+            <li><a href="#questions">Питання</a></li>
+        </ul>       
+    </div>
+
+    <p id="main" style="color: white;">.</p>
+    <div class="content"> <img style="height: 365px; " src="mainPhoto.jpg" alt="Фото"> </div>
+
+<p id="adress" style="font-size: 20px; color: #0a3737; font-weight: bold; text-align: center;">  Не любиш купляти онлайн? Не проблема, шукай наш магазин у твоєму місті і приходь до нас!  </p>
+<style>
+    table, th, td {
+        border: 2px solid #0a3737;
+        text-align: center;
+       
+    }
+    
+    tr:nth-child(odd) {
+        background-color: #D6EEEE;
+    }
+</style>
+
+<table >
+    <caption style="font-size: 20px; text-align: center;">Адреса магазинів</caption>
+    <tr>
+        <th > Місто</th>
+        <th > Адреса</th>
+        <th > Номер телефона </th>
+    </tr>
+    <tr>
+        <td> Київ</td>
+        <td> пл. Українських Героїв, 8</td>
+        <td>0956452568</td>
+    </tr>
+    <tr>
+        <td>Львів</td>
+        <td>вул. Небесної Сотні, 15</td>
+        <td>0659854562</td>
+    </tr>
+    <tr>
+        <td>Чернігів</td>
+        <td>вул. І. Мазепи, 121А</td>
+        <td>0546895466</td>
+    </tr>
+    <tr>
+        <td>Харків</td>
+        <td>вул. Пирогова, 58</td>
+        <td>0876592411</td>
+    </tr>
+    <tr>
+        <td>Дніпро</td>
+        <td>вул. Терика, 18</td>
+        <td>0635457782</td>
+    </tr>
+    <tr>
+        <td>Ужгород</td>
+        <td>вул. Волошина, 154</td>
+        <td>0996531144</td>
+    </tr>
+    <tr>
+        <td>Вінниця</td>
+        <td>вул. І. Франка, 244</td>
+        <td>0986631458</td>
+    </tr>
+</table>
+
+<p id="contacts" style="font-size: 20px; color: #0a3737; font-weight: bold; text-align: center;">  Не знайшов книгарні в твоєму місті? Тоді здійснюй покупку онлайн, а якщо будуть питання - ми з радістю допоможемо :) </p>
+<span style="font-size: 20px; text-align: center;"> Наші контакти</style></span>
+
+<ul>
+    <li style="font-size: 17px;">Tell: +380985654211</li>
+    <li style="font-size: 17px;">Site: <a href="http://127.0.0.1:5501/index.html#adress">http://127.0.0.1:5501/index.html#adress</a></li>
+    <li style="font-size: 17px;">Instagram: @mrsPins.bookstore</li>
+    <li style="font-size: 17px;">Facebool: mrsPins.bookstore</li>
+    <li style="font-size: 17px;">Gmail: mrsPinsBookstore@gmail.com</li>
+</ul>
+
+<p id="questions" style="font-size: 20px; color: #0a3737; font-weight: bold; text-align: center;">  Залишилися питання? Вводь свій номер телефону нижче, і ми обов'язково вам зателефонуємо протягом 10-ти хвилин. </p>
+
+<blockquote> Введіть ваш номер телефону</blockquote>        
+        <form>
+            <input type='text' name='number' style="width: 400px; height: 50px;"><br><br>
+            <input type='submit' value='Відправити' style="width: 100px; height: 45px;">
+        </form> 
+
+
+<p><footer>
+    &copy; IC-33 Slyvka Veronika
+</footer> </p>
+<a href="description.html">Предметна галузь</a>
+
+
+
+</body>
+</html>
